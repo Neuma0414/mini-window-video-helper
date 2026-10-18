@@ -1,7 +1,8 @@
-# 与上游 apades/dmMiniPlayer v0.6.15 的差异（详见 NOTICE.md 第 33 项）：
+# 与上游 apades/dmMiniPlayer v0.6.15 的差异（详见 NOTICE.md 第 33、41、42 项）：
 #   1. 构建增加 --metafile，产出 CHANGELOG.txt，Release 附件增加 metafile.json
-#   2. Node 版本 18 → 22：scripts/getChangeLog.mjs 使用 JSON 导入，
-#      Node 18.20 会抛 ERR_IMPORT_ASSERTION_TYPE_MISSING
+#   2. Node 版本 18 → 22。Node 22 移除了 `assert { type: 'json' }` 导入断言，
+#      故 scripts/ 下三个脚本统一改用 `with { type: 'json' }`。
+#      上游的 getChangeLog.mjs 原本完全缺少导入属性，任何 Node 版本都跑不起来。
 name: Auto release
 
 on:

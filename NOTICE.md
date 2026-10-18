@@ -25,7 +25,7 @@
 | 删除 | 1 |
 | **本地文件合计** | **327**（324 − 1 + 4） |
 
-下表列出**全部 40 个差异文件**。除此之外的每一个文件均与上游逐字节相同。
+下表列出**全部 42 个差异文件**。除此之外的每一个文件均与上游逐字节相同。
 
 ### A. 功能改动（3）
 
@@ -56,12 +56,12 @@
 
 | # | 文件 | 改动 |
 |---|---|---|
-| 28 | `scripts/getChangeLog.mjs` | **新增**。从上游 changelog 抽取本版本更新说明，输出到 `CHANGELOG.txt` 供 Release 正文使用 |
+| 28 | `scripts/getChangeLog.mjs` | **新增**。从上游 changelog 抽取本版本更新说明，输出到 `CHANGELOG.txt` 供 Release 正文使用；JSON 导入使用 `with { type: 'json' }` |
 | 29 | `scripts/utils.mjs` | `getChangeLog()` 改为可选链 + 可选调用（无对应条目时返回 `undefined` 而非抛错） |
 | 30 | `scripts/tsup.shared.ts` | 类型标注方式调整：`Parameters<typeof defineConfig>[0]` 由变量注解改为 `satisfies`；`getChangeLog()` 调用加 `?.` |
 | 31 | `scripts/tsup.build.ts` | 同上类型调整 |
 | 32 | `scripts/tsup.dev.ts` | 同上类型调整 |
-| 33 | `.github/workflows/release.yml` | 构建增加 `--metafile`；产出 `CHANGELOG.txt`；Release 附件增加 `metafile.json`；设置 `body_path`；CI Node 版本 18 → 22（`scripts/getChangeLog.mjs` 使用 JSON 导入，Node 18 报 `ERR_IMPORT_ASSERTION_TYPE_MISSING`） |
+| 33 | `.github/workflows/release.yml` | 构建增加 `--metafile`；产出 `CHANGELOG.txt`；Release 附件增加 `metafile.json`；设置 `body_path`；CI Node 版本 18 → 22（配合第 41、42 项的导入属性改动） |
 | 34 | `.github/ISSUE_TEMPLATE/bug.md` | 环境信息改为勾选式（OS / 浏览器 / 版本） |
 
 ### E. 兼容性修复（1）
@@ -79,6 +79,13 @@
 | 38 | `readme.md` | 顶部新增「修改版声明」（来源、许可、与原版差异）；安装说明校正；删除签名私钥相关表述；Firefox 标注未实测 |
 | 39 | `.gitignore` | 补充 `*.pem`、`*.key`、`*.crx`、`*.zip`、`dist-*/`、`*_extract_*/`、`_crx_body.zip` 等拦截规则与说明 |
 | 40 | `src/web-provider/agemys/index.tsx` | **删除**。全仓库无任何引用，属上游遗留死代码 |
+
+### G. CI 脚本兼容（2）
+
+| # | 文件 | 改动 |
+|---|---|---|
+| 41 | `scripts/archive.mjs` | JSON 导入由 `assert { type: 'json' }` 改为 `with { type: 'json' }`（Node 22 已移除 `assert` 语法，CI 升到 22 后必须同步） |
+| 42 | `scripts/release.mjs` | 同上 |
 
 **核心播放与弹幕逻辑未改动**，仅调整了画中画容器的尺寸、定位上下文与子元素顺序。
 
