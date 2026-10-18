@@ -1,0 +1,23 @@
+{
+  "appName": {
+    "message": "小窗視訊助手"
+  },
+  "appDesc": {
+    "message": "把視訊/直播放進可懸浮的畫中畫小窗，附帶頂部欄目條與底部卡片資訊欄，輕量、純展示外觀"
+  },
+  "back": {
+    "message": "後退"
+  },
+  "forward": {
+    "message": "快轉"
+  },
+  "playOrPause": {
+    "message": "暫停/播放"
+  },
+  "hide": {
+    "message": "隱藏畫中畫"
+  },
+  "playbackRate": {
+    "message": "開啟/關閉倍速，預設3倍速，修改請至設定頁"
+  }
+}

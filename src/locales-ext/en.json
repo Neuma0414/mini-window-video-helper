@@ -1,0 +1,23 @@
+{
+  "appName": {
+    "message": "Mini Window Video Helper"
+  },
+  "appDesc": {
+    "message": "Put video/live streams into a floating picture-in-picture window with a lightweight top banner and bottom info cards (display only)"
+  },
+  "back":{
+    "message":"backward"
+  },
+  "forward":{
+    "message":"forward"
+  },
+  "playOrPause":{
+    "message":"pause/play"
+  },
+  "hide":{
+    "message":"hide picture-in-picture"
+  },
+  "playbackRate":{
+    "message":"Turn on/off double speed. Default 3x, can change in settings"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "appName": {
+    "message": "Assistant mini-fenêtre vidéo"
+  },
+  "appDesc": {
+    "message": "Place une vidéo ou un direct dans une fenêtre flottante picture-in-picture, avec barre supérieure et cartes d'information en bas (affichage uniquement)"
+  },
+  "back": {
+    "message": "Retour"
+  },
+  "forward": {
+    "message": "Avance rapide"
+  },
+  "playOrPause": {
+    "message": "Pause/Lecture"
+  },
+  "hide": {
+    "message": "Masquer l'image dans l'image"
+  },
+  "playbackRate": {
+    "message": "Activer/désactiver la double vitesse. La valeur par défaut est 3x. Veuillez vous rendre sur la page des paramètres pour la modifier."
+  }
+}

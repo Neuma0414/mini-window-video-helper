@@ -1,0 +1,73 @@
+**/export/*
+.DS_store
+node_modules
+
+# ===== 扩展签名私钥：绝对禁止进入仓库（私钥泄露可被伪造同 ID 的更新包）=====
+*.pem
+*.key
+
+# ===== 打包产物：改走 Release 附件，不进 git 历史 =====
+*.crx
+*.zip
+dist/
+dist-*/
+
+# ===== 评估/解包临时目录 =====
+*_extract_*/
+_crx_body.zip
+
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+dist
+.vscode/*
+
+assets/temp.ass
+assets/temp.mp4
+
+
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+/node_modules
+/.pnp
+.pnp.js
+
+# testing
+/coverage
+
+#cache
+.turbo
+.next
+.vercel
+
+# misc
+.DS_Store
+*.pem
+
+# debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+
+# local env files
+.env*
+
+out/
+build/
+dist/
+
+# bpp - http://bpp.browser.market/
+keys.json
+
+# typescript
+.tsbuildinfo
+
+sample-mp4-file.mp4

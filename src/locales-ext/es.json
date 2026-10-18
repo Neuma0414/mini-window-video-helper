@@ -1,0 +1,23 @@
+{
+  "appName": {
+    "message": "Asistente de miniventana de vídeo"
+  },
+  "appDesc": {
+    "message": "Coloca vídeo o transmisiones en una ventana flotante de imagen en imagen, con barra superior y tarjetas de información inferiores (solo visualización)"
+  },
+  "back": {
+    "message": "Volver"
+  },
+  "forward": {
+    "message": "Avance rápido"
+  },
+  "playOrPause": {
+    "message": "Pausar/Reproducir"
+  },
+  "hide": {
+    "message": "Ocultar imagen en imagen"
+  },
+  "playbackRate": {
+    "message": "Activa/desactiva la velocidad doble. La velocidad predeterminada es 3x. Ve a la página de configuración para modificarla"
+  }
+}

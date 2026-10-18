@@ -1,0 +1,23 @@
+{
+  "appName": {
+    "message": "미니 윈도우 비디오 도우미"
+  },
+  "appDesc": {
+    "message": "비디오나 라이브 방송을 PiP 창에 띄우고, 상단 배너와 하단 정보 카드로 꾸며줍니다(표시 전용)"
+  },
+  "back": {
+    "message": "뒤로"
+  },
+  "forward": {
+    "message": "빨리 감기"
+  },
+  "playOrPause": {
+    "message": "일시중지/재생"
+  },
+  "hide": {
+    "message": "PIP 숨기기"
+  },
+  "playbackRate": {
+    "message": "2배속을 켜거나 끕니다. 기본값은 3배속입니다. 수정하려면 설정 페이지로 이동하세요."
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "appName": {
+    "message": "小窗视频助手"
+  },
+  "appDesc": {
+    "message": "把视频/直播放进可悬浮的画中画小窗，附带顶部栏目条与底部卡片信息栏，轻量、纯展示外观"
+  },
+  "back": {
+    "message": "后退"
+  },
+  "forward": {
+    "message": "快进"
+  },
+  "playOrPause": {
+    "message": "暂停/播放"
+  },
+  "hide": {
+    "message": "隐藏画中画"
+  },
+  "playbackRate": {
+    "message": "开启/关闭倍速，默认3倍速，修改请到设置页"
+  }
+}
