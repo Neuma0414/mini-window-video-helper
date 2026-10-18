@@ -3,12 +3,16 @@
 #   2. Node 版本 18 → 22。Node 22 移除了 `assert { type: 'json' }` 导入断言，
 #      故 scripts/ 下三个脚本统一改用 `with { type: 'json' }`。
 #      上游的 getChangeLog.mjs 原本完全缺少导入属性，任何 Node 版本都跑不起来。
+#   3. 显式声明 contents: write，否则新建 Release 会 403（仓库默认工作流权限为只读）
 name: Auto release
 
 on:
   push:
     tags: 
       - v*
+
+permissions:
+  contents: write
 
 jobs:
   build:
