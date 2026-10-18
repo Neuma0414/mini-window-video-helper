@@ -61,7 +61,7 @@
 | 30 | `scripts/tsup.shared.ts` | 类型标注方式调整：`Parameters<typeof defineConfig>[0]` 由变量注解改为 `satisfies`；`getChangeLog()` 调用加 `?.` |
 | 31 | `scripts/tsup.build.ts` | 同上类型调整 |
 | 32 | `scripts/tsup.dev.ts` | 同上类型调整 |
-| 33 | `.github/workflows/release.yml` | 构建增加 `--metafile`；产出 `CHANGELOG.txt`；Release 附件增加 `metafile.json`；设置 `body_path` |
+| 33 | `.github/workflows/release.yml` | 构建增加 `--metafile`；产出 `CHANGELOG.txt`；Release 附件增加 `metafile.json`；设置 `body_path`；CI Node 版本 18 → 22（`scripts/getChangeLog.mjs` 使用 JSON 导入，Node 18 报 `ERR_IMPORT_ASSERTION_TYPE_MISSING`） |
 | 34 | `.github/ISSUE_TEMPLATE/bug.md` | 环境信息改为勾选式（OS / 浏览器 / 版本） |
 
 ### E. 兼容性修复（1）
